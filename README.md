@@ -1,6 +1,6 @@
 # APP NAME
 
-    One Minute Pitch.
+    One Minute Pitch
 
 # AUTHOR
 
