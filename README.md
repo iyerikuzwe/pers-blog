@@ -11,23 +11,24 @@
     This is an app that allows users to create,submit,vote pitches based on categories
 
 #### Pitch Categories
-* pickup lines
-* interview pitches
-* product pitches
-* promotion pitches
+
+    * pickup lines
+    * interview pitches
+    * product pitches
+    * promotion pitches
 
 #### User Stories
 
 
-* A users can see pitches that other people have posted
-* A user can vote on posted pitches with either a down or an up vote
-* A user can comment on different pitches and leave feedback
-* A user can submit a pitch in any category
-* A user can submit to different categories
+    * A users can see pitches that other people have posted
+    * A user can vote on posted pitches with either a down or an up vote
+    * A user can comment on different pitches and leave feedback
+    * A user can submit a pitch in any category
+    * A user can submit to different categories
 
 
 ## Prerequisites
-* Python3.6
+    * Python3.6
 
 ## Installation steps 
 * $ git clone https://github.com/iyerikuzwe/One-minute-s-pitch
