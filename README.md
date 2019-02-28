@@ -46,8 +46,7 @@
 #### Moringa School, StackOverflow.com and W3 schools
 
 # Technologies Used
-
-#### This project uses major technologies which are :
+This project uses major technologies which are :
 * HTML5/CSS 
 * Bootstrap 
 * Python3.6
