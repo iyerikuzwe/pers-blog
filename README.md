@@ -10,7 +10,7 @@
 
     This is an app that allows users to create,submit,vote pitches based on categories
 
-#### Pitch Categories
+#### Pitch Categories.
 * pickup lines
 * interview pitches
 * product pitches
