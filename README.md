@@ -43,7 +43,7 @@
 
 # CREDITS
 
-#### Moringa School, StackOverflow.com and W3 schools
+Moringa School, StackOverflow.com and W3 schools
 
 # Technologies Used
 This project uses major technologies which are :
