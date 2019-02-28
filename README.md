@@ -36,7 +36,7 @@
 * Inside the manage.py module change the config_name parameter from 'production' to 'development' ie app = create_app('production') should be app = create_app('development')
 * $ ./start.sh 
 
-# How it works.
+# How it works
 
 * A user needs to sign up
 * A user the needs to sign in order to create,vote and post pitches 
