@@ -40,7 +40,7 @@
 # How it works
 
     * A user needs to sign up
-    * A user the needs to sign in order to create,vote and post pitches .
+    * A user the needs to sign in order to create,vote and post pitches
 
 # CREDITS
 
