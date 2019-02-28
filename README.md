@@ -30,7 +30,7 @@
 * Python3.6
 
 ## Installation steps 
-* $ git clone https://github.com/iyerikuzwe/One-Minute-Pitch.git
+* $ git clone https://github.com/iyerikuzwe/One-minute-s-pitch
 * $ cd One-Minute-Pitch
 * $ source virtual/bin/activate
 * Inside the manage.py module change the config_name parameter from 'production' to 'development' ie app = create_app('production') should be app = create_app('development')
