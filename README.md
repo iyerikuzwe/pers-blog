@@ -39,8 +39,8 @@
 
 # How it works
 
-* A user needs to sign up
-* A user the needs to sign in order to create,vote and post pitches 
+    * A user needs to sign up
+    * A user the needs to sign in order to create,vote and post pitches .
 
 # CREDITS
 
@@ -48,7 +48,7 @@
 
 # Technologies Used
 This project uses major technologies which are :
-    * HTML5/CSS 
+    * HTML/CSS 
     * Bootstrap 
     * Python3.6
     * flask

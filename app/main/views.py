@@ -19,7 +19,7 @@ def index():
     search_pitch = request.args.get('pitch_query')
     pitches= Pitch.get_all_pitches()  
 
-    return render_template('index.html', title = title, pitches= pitches)
+    return render_template('index.html', title = title, search_pitch= pitches)
 
 #this section consist of the category root functions
 
