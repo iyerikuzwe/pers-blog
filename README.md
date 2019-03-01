@@ -63,7 +63,7 @@ This project uses major technologies which are :
 
     * MIT License
 
-    Copyright (c) 2019 Iyerikuzwe Regine.
+    Copyright (c) 2019 Iyerikuzwe Regine
 
 
 
