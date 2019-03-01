@@ -4,7 +4,7 @@
 
 # AUTHOR
 
-    Iyerikuzwe Regine
+    Iyerikuzwe Regine.
 
 # DESCRIPTION
 
