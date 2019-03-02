@@ -1,63 +1,37 @@
-{% extends 'base.html'%}
-{% import 'macros.html' as macro%}
-
+{% extends 'base.html' %}
 {% block styles%}
 {{ super() }}
-<link href="https://fonts.googleapis.com/css?family=Akronim|Bellefair|Joti+One" rel="stylesheet">
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
 {% endblock %}
 
+<!-- content block -->
 {% block content %}
-    <div class="container" style="background-color:darkcyan; padding:20px; margin-top:0px; padding-top:40px; padding-bottom:400px;">
-        <div class="row" style="text-align:center; font-size:30px;">
-            <span style="font-size:40px; font-family: 'Akronim', cursive;">oNe mINute PiTch</span>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"> 
-                    <a href="{{url_for('main.interview')}}" style="color:white; font-size:20px;">
-                        <br>
-                        Inteview Pitches
-                    </a>
-                    <br>
-                    <a href="{{url_for('main.pick_up_line')}}" style="color:white; font-size:20px;">
-                        <br>
-                        Pick Up Lines
-                    </a>
-                    <br>
-                    <a href="{{url_for('main.promotion')}}" style="color:white; font-size:20px;">
-                        <br>
-                        Promotion Pitches
-                    </a>
-                    <br>
-                    <a href="{{url_for('main.product')}}" style="color:white; font-size:20px;">
-                        <br>
-                        Product Pitches
-                    </a>
-                    <br>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
-            <div class="panel style="style="border: 3px solid #f2f2f2; padding:20px; margin-top:10px;">
-                <p style="font-family: 'Bellefair', serif; font-size:20px;">Write your one minute in any of the categories to the left and let other user vote and comment on it.Please also feel free to comment and vote on pitches posted by other people </p>
-                
-                <div style="text-align:center;">
-                    <a href="{{url_for('main.new_pitch')}}">
-                        <br>
-                        <span >Add a new Pitch</span>
-                    </a>
-
+<body>
+   {% if blogs %}
+  <div class=" col-md-8">
+            {% for blog in blogs%}
+            <div class="thumbnail" style="border-radius:10px; background-color:#EFE0B9;">
+             <article class="media content-section">
+                <div class="media-body">
+                    <div class="article-metadata">
+                        <p>{{ blog.author }}</p>
+                        <small class="text-muted">{{ blog.date_posted.strftime('%Y-%m-%d')}}</small>
+                        <hr>
+                    </div>
+                    
+            <a href="/view-blog/{{blog.id}}">{{blog.title | upper}}</a>
+                    <p >{{ blog.content }}</p>
                 </div>
             
             </div>
-            
+                <a class="btn btn-danger" href="/delete-blog/{{blog.id}}"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+<hr>
+          {% endfor %}
+            </div>
+             {%else%}
+        <div class="well">
+          <h4 style="padding:10%; text-align:center; font-size:50px">No blogs created yet</h4>
         </div>
-    </hr>
-        <div class="all-pitches">
-            <span style="color:gainsboro;">All pitches are displayed below</span>
-                <hr> 
-                {{macro.displayPitches(pitches)}}
-            
-
-        </div>
-
-    </div>
-
-
+{% endif %}
+ </body>      
 {% endblock %}

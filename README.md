@@ -1,88 +1,62 @@
-# APP NAME
+# Personal-blog
 
-    One Minute Pitch
+A web application where one can start blogs and users can comment on the topic or start a blog of their own.
+Live link: https://regineiyera.herokuapp.com/
 
-# AUTHOR
+### Prerequisites
 
-    Iyerikuzwe Regine.
-
-# DESCRIPTION
-
-    This is an app that allows users to create,submit,vote pitches based on categories
-
-#### Pitch Categories
-
-    * pickup lines
-    * interview pitches
-    * product pitches
-    * promotion pitches
-
-#### User Stories
+Python 3.7 required
 
 
-    * A users can see pitches that other people have posted
-    * A user can vote on posted pitches with either a down or an up vote
-    * A user can comment on different pitches and leave feedback
-    * A user can submit a pitch in any category
-    * A user can submit to different categories
+### Set-Up
+
+To access this app on your local machine:
+1) Clone the repo
+2) Create a virtual environment then pip install requirements.txt
+3) Create a start.sh file and in it export your secret key, mail username and password and add "python manage.py server" 
+4) On your terminal run: chmod a+x start.sh
+5) Then to run type :./start.sh 
 
 
-## Prerequisites
-    * Python3.6
+### Features
 
-## Installation steps 
-* $ git clone https://github.com/iyerikuzwe/One-minute-s-pitch
-* $ cd One-Minute-Pitch
-* $ source virtual/bin/activate
-* Inside the manage.py module change the config_name parameter from 'production' to 'development' ie app = create_app('production') should be app = create_app('development')
-* $ ./start.sh 
+1. Uses a number of Flask and Python modules.
+2. Users log in have an account page get to upload profile pics.
+3. Users once logged in can post a blog and comment on blogs posted.
+4. Users can subscribe to get emails whenever a new blog has been posted.
+## BDD
+| Behaviour  | Input | Output |
+| ------------- | ------------- |------------- |
+| Click on Register button| Fill out form on your details| Register on blog|
+| Click on View blogs button| Redirects you to page with blogs| View index page|
+| Click on + Start a blog post in navigation bar| Fill out form on details on blogpost you'd like to post| Posts blog|
+| Click on blue title in a blog| Opens the blog and comments made on it| See more details on the blogpost|
+| Click on comment| Fill out form on what you want to comment on| Comments on the blog|
+| Click on trash can in the blogpost| Refreshes the blogs' page minus that blog if you have the access rights | Deletes blog |
+| Click on subscribe in navigation bar| Fill out your email address | Subscribes you to the blog to get emails when a new blog is posted |
 
-# How it works
+## Known Bugs
 
-    * A user needs to sign up
-    * A user the needs to sign in order to create,vote and post pitches
+There are no bugs. Incase of any, contact me at iyerikuzweregine19@gmail.com
 
-# CREDITS
+### Technologies used
 
-    Moringa School, StackOverflow.com and W3 schools
+This application was made with Python version 3.7 using the flask framework. The templates were made using html and was styles using css and bootstrap 4.
 
-# Technologies Used
-This project uses major technologies which are :
-    * HTML/CSS 
-    * Bootstrap 
-    * Python3.6
-    * flask
+### Support and Contact details
 
+Incase of additions or if you run into any issues, my email address is: iyerikuzweregine19@gmail.com
 
-# Support and Contacts
+## License
 
-    * In case You have any issues using this code please do no hesitate to get in touch with me through iyerikuzweregine19@gmail.com
-    * or leave a commit here on github.
-    * or use 0789140216
-# License
+Copyright (c)  2019 Iyerikuzwe Regine
 
-    * MIT License
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-    Copyright (c) 2019 Iyerikuzwe Regine
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
 
-    The above copyright notice and this permission notice shall be included in all
-    copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-    SOFTWARE.*
-
-    Copyright (c) 2019 ** [Iyerikuzwe Regine](https://iyerikuzwe.github.io/ "Github Portfolio") ** 
