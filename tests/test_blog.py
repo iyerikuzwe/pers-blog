@@ -13,8 +13,8 @@ class BlogTest(unittest.TestCase):
         self.new_blog = Blog(1,
                                'Python Must Be Crazy',
                                'A thrilling new Python Series',
-                               'Ozzy',
-                               2018)
+                               'Regine',
+                               2019)
 
     def test_instance(self):
         self.assertTrue(isinstance(self.new_blog, Blog))

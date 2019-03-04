@@ -81,8 +81,10 @@ def new_blog():
         new_blog = Blog(content = content, title=title, author = author,  user_id = current_user.id)
         new_blog.save_blog()
         subs = Subscription.query.all()
-        for sub in subs:
-            mail_message("New Blog", "email/new_blog", sub.email)
+        print(subs)
+        # for sub in subs:
+        #     # print(sub)
+        #     print(mail_message("New Blog", "email/new_blog", sub))
         return redirect(url_for('main.index'))
     return render_template('new-blog.html',form=form)
 
